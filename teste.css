@@ -7,6 +7,7 @@
     display: flex;
     justify-content: space-between;
     padding: 10px;
+    margin: 10px 10px;
 }
 .container-noticia{
     display: block;
@@ -15,7 +16,6 @@
     justify-content: center;
     align-items: center;
     border-radius:8px ;
-    margin: auto;
     padding: 10px;
 }
 .container-header{
@@ -49,79 +49,26 @@
         font-size: 20px;
     }
     .container-midias{
-        display: block;
         width: 350px;
+        height: 650px;
         text-align: center;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         border-radius: 8px;
+        overflow-y: scroll;
     }
     .container-img{
-        display: grid;
+        width: 100%;
         align-items: center;
         justify-content: center;
         margin: auto;
         padding: 10px;
         
     }
-    .filme-container {
-        width: 350px;
-        height: 200px;
-        background-color: #192c4d; /* tom escuro parecido com o ícone */
-        
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
-      }
-      
+   
+
       .imagem-centro img {
-        width: 80%;
+        width: 100%;
         height: auto;
         border-radius: 10px;
         object-fit: cover;
-      }
-      
-      /* Furinhos laterais */
-      .furinho {
-        position: absolute;
-        width: 16px;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        padding: 10px 0;
-        z-index: 2;
-      }
-      
-      .furinho::before,
-      .furinho::after,
-      .furinho span {
-        content: "";
-        display: block;
-        width: 12px;
-        height: 14px;
-        background-color: white;
-        border-radius: 4px;
-        margin: 4px 0;
-      }
-      
-      /* Lado esquerdo */
-      .furinho.esquerda {
-        left: 8px;
-      }
-      
-      /* Lado direito */
-      .furinho.direita {
-        right: 8px;
-      }
-      
-
-      #prime{
-        border-top-right-radius: 25px;
-        border-top-left-radius: 25px;
-      }
-      #ulti{
-        border-bottom-left-radius: 25px;
-        border-bottom-right-radius: 25px;
       }
