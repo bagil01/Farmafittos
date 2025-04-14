@@ -1,0 +1,117 @@
+/* Reset básico */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0.225);
+}
+
+/* Container principal */
+.container {
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ajuste no título */
+#titulo-descricao {
+    text-align: center;
+}
+
+/* Estilos da descrição */
+.container-descricao {
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 70%;
+    border-radius: 8px;
+    text-align: justify;
+    margin-bottom: 3rem;
+}
+
+/* Container para os contatos e endereço */
+.container-contatos-endereco {
+    display: flex;
+    justify-content: space-between;
+    max-width: 50%;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+/* Estilo do endereço */
+
+
+#text-endereco {
+    font-size: 18px;
+    color: black;
+    text-decoration: none;  /* Remove o sublinhado */
+}
+
+#text-endereco:hover {
+    color: #bdc3c7;
+}
+
+/* Estilo dos contatos */
+.contatos,.endereco  {
+    flex: 1;
+    text-align: left;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 50%;
+    border-radius: 8px;
+    text-align: justify;
+    margin-bottom: 2rem;
+    margin-top:3rem;
+}
+
+.contatos ul {
+    display: flex;
+    padding: 0;
+}
+
+.contatos li {
+    list-style: none;
+    margin-right: 5px;
+    border: 1px solid #bdc3c7;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: #95a5a6;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.contatos li:hover {
+    background-color: rgb(238, 238, 238);
+}
+
+.contatos a {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 999px) {
+    .container-descricao {
+        max-width: 80%;
+    }
+
+    .container-contatos-endereco {
+        flex-direction: column;
+        align-items: center;
+        max-width: 80%;
+    }
+
+    .endereco, .contatos {
+        text-align: center;
+    }
+}

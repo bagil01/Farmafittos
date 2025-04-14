@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrossel Voluntários</title>
+    <link rel="stylesheet" href="./css/A_home.css">
+</head>
+<body>
+
+    <div class="container-voluntarios">
+        <div class="carousel">
+            <div class="card-voluntarios"><img src="./assents/logo-usp.jpeg" alt=""></div>
+            <div class="card-voluntarios"><img src="./assents/logo-usp.jpeg" alt=""></div>
+            <div class="card-voluntarios"><img src="./assents/logo-usp.jpeg" alt=""></div>
+            <div class="card-voluntarios"><img src="./assents/logo-usp.jpeg" alt=""></div>
+            <div class="card-voluntarios"><img src="./assents/logo-usp.jpeg" alt=""></div>
+            <div class="card-voluntarios"><img src="./assents/logo-usp.jpeg" alt=""></div>
+        </div>
+    </div>
+
+    <script>
+        const carrossel = document.querySelector(".carousel");
+        const cards = document.querySelectorAll(".card-voluntarios");
+        let currentIndex = 0;
+        let rolagemAtiva = true;
+        let intervalo;
+
+        function moverCarrossel() {
+            if (rolagemAtiva) {
+                currentIndex++;
+                carrossel.style.transition = "transform 0.5s ease-in-out";
+                carrossel.style.transform = `translateX(-${currentIndex * (100 / 3)}%)`;
+
+                if (currentIndex >= cards.length - 2) {
+                    setTimeout(() => {
+                        carrossel.style.transition = "none";
+                        currentIndex = 0;
+                        carrossel.style.transform = "translateX(0)";
+                    }, 500);
+                }
+            }
+        }
+
+        function iniciarRolagem() {
+            intervalo = setInterval(moverCarrossel, 2000);
+        }
+
+        function pausarRolagem() {
+            rolagemAtiva = false;
+            clearInterval(intervalo);
+        }
+
+        function retomarRolagem() {
+            rolagemAtiva = true;
+            iniciarRolagem();
+        }
+
+        carrossel.addEventListener("mouseenter", pausarRolagem);
+        carrossel.addEventListener("mouseleave", retomarRolagem);
+
+        iniciarRolagem();
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+.container{
+    display: block;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color:#ffff;
+    
+}
+.container-titulo {
+    text-align: center; /* Centraliza o texto */
+    width: 100%; /* Garante que o container ocupa toda a largura */
+    
+}
+.container-titulo h1 {
+    margin: 0 auto; /* Remove margens externas e alinha ao centro */
+    display: inline-block; /* Garante que o texto respeite a largura do conteúdo */
+}
+
+.container-voluntarios {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* Maior espaçamento entre os elementos */
+    width: 900px; /* Aumentei a largura do carrossel */
+    margin: auto;
+}
+
+.carousel {
+    width: 100%;
+    overflow: hidden;
+}
+
+.cards-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.card-voluntarios {
+    width: 450px; /* Aumentei a largura do card */
+    height: auto; /* Defini uma altura maior */
+    text-align: center;
+    padding: 20px; /* Mais espaço interno */
+    background-color: transparent; /* Cor de fundo para destacar */
+    margin-right: 20px;
+}
+
+.card-voluntarios img {
+    width: 150px; /* Aumentei a imagem */
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.fa-angle-left, .fa-chevron-right {
+    cursor: pointer;
+    font-size: 50px;
+    color: rgb(15, 110, 15);
+}
+
+.fa-angle-left:hover, .fa-chevron-right:hover {
+    color: rgb(12, 78, 12);
+}
+
+.card-voluntarios h1 {
+    font-size: 22px; /* Aumentei o tamanho do título */
+    font-weight: bold;
+}
+
+.card-voluntarios h2 {
+    font-size: 18px;
+    color: #555;
+}
+
+.card-voluntarios h3 {
+    font-size: 16px;
+    color: #777;
+}

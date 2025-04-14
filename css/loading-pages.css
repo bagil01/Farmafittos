@@ -1,0 +1,32 @@
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilizando o Container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+/* Ícone da Plantinha */
+.container i{
+    font-size: 100px;
+    color: rgb(0, 246, 74); /* Começa invisível */
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: mudarCor 5s infinite ease-in-out;
+}
+
+@keyframes mudarCor {
+    0% { color: rgb(0, 255, 0); }
+    25% { color: rgb(0, 90, 0); }
+    50% { color: rgb(0, 255, 0); }
+    75% { color: rgb(0, 90, 0);}
+    100% { color: rgb(0, 255, 0); }
+}

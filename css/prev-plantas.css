@@ -1,0 +1,102 @@
+/* Reset Básico */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Container Principal */
+.container {
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    padding: 20px;
+}
+
+/* Estilização do Card */
+.card-plantas {
+    display: flex;
+    flex-direction: row;
+    /* Mantém imagem e texto lado a lado */
+    width: 100%;
+    max-width: 900px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 15px;
+    gap: 15px;
+    /* Espaçamento entre imagem e texto */
+}
+
+/* Estilização da Imagem */
+.card-img {
+    flex: 1;
+    /* Ocupa 1 parte do espaço */
+    width: 60%;
+    /* Limita o tamanho da imagem */
+}
+
+.card-img img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+/* Estilização do Texto */
+.card-txt {
+    flex: 2;
+    /* Ocupa 2 partes do espaço */
+    padding: 10px;
+}
+
+.link {
+    text-align: center;
+}
+
+.card-txt h1 {
+    font-size: 20px;
+    color: #2c5b32;
+    margin-bottom: 10px;
+}
+
+.card-txt h2 {
+    font-size: 15px;
+    color: #4d774e;
+    margin-bottom: 8px;
+}
+
+.card-txt p {
+    font-size: 15px;
+    color: #555;
+    text-align: justify;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+.card-txt a {
+    color: #5BA976;
+    text-decoration: none;
+    animation: mudarCor 2s infinite;
+}
+
+.card-txt a:hover {
+    color: #4D774E;
+}
+
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .card-plantas {
+        flex-direction: column;
+        /* Empilha em telas pequenas */
+        text-align: center;
+    }
+
+    .card-img {
+        max-width: 100%;
+        /* Imagem ocupa toda a largura */
+    }
+}
