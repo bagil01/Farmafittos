@@ -5,7 +5,9 @@
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
-
+body{
+    background-color: #E6F0EC;
+}
 /* Contêiner principal */
 .container {
     width: 100%;
@@ -25,7 +27,7 @@
 /* Cartão de notícia */
 .container-noticias {
     display: flex;
-    background-color: white;
+    background-color: #E6F0EC;
     width: 100%;
     border-radius: 12px;
     overflow: hidden;
