@@ -24,6 +24,7 @@
     gap: 15px; /* Maior espaçamento entre os elementos */
     width: 900px; /* Aumentei a largura do carrossel */
     margin: auto;
+    
 }
 
 .carousel {
@@ -43,6 +44,7 @@
     padding: 20px; /* Mais espaço interno */
     background-color: transparent; /* Cor de fundo para destacar */
     margin-right: 20px;
+    
 }
 
 .card-voluntarios img {
