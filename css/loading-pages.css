@@ -1,32 +1,33 @@
-/* Reset Básico */
-* {
+/* Fundo animado sutil */
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-/* Estilizando o Container */
-.container {
+    background: linear-gradient(-45deg, #e3fdf5, #fef9d7, #d4fc79, #96e6a1);
+    background-size: 400% 400%;
+    animation: gradientBG 8s ease infinite;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
+    font-family: "Arial", sans-serif;
 }
 
-/* Ícone da Plantinha */
-.container i{
-    font-size: 100px;
-    color: rgb(0, 246, 74); /* Começa invisível */
-    -webkit-background-clip: text;
-    background-clip: text;
-    animation: mudarCor 5s infinite ease-in-out;
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
-@keyframes mudarCor {
-    0% { color: rgb(0, 255, 0); }
-    25% { color: rgb(0, 90, 0); }
-    50% { color: rgb(0, 255, 0); }
-    75% { color: rgb(0, 90, 0);}
-    100% { color: rgb(0, 255, 0); }
+/* Centraliza o ícone e o texto */
+.loading-container {
+    text-align: center;
+}
+
+.loading-container i {
+    margin-bottom: 20px;
+}
+
+.loading-container p {
+    font-size: 1.2rem;
+    color: #15c691;
 }
