@@ -1,174 +1,100 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #F4F1EE;
+  color: #333;
+}
+
 header {
-    background-image: url('img/folha-da-fortuna.jpg'); /* Troque para a imagem da planta */
-    background-size: cover;
-    background-position: center;
-    height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-shadow: 1px 1px 4px #000;
-  }
-  
-  header h1 {
-    background: rgba(42, 147, 36, 0.5);
-    padding: 1rem 2rem;
-    border-radius: 12px;
-  }
-  * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  background-image: url('./assents/folha_da_fortuna.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 2px 2px 6px #000;
 }
 
-.container {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    margin: 10px 10px;
-}
-
-.container-conteudo{
-    display: block;
-    width: 70%;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
-    padding: 10px;
-}
-
-
-
-.container-time {
-    display: flex;
-    justify-content: center;
-
-}
-
-.container-time h2 {
-    margin-left: 3px;
-    font-size: 15px;
-    font-style: italic;
+header h1 {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 1rem 2rem;
+  border-radius: 16px;
+  font-size: 1.8rem;
 }
 
 .container-conteudo {
-    text-align: justify;
-    padding: 10px;
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 20px;
 }
 
-
-.container-midias {
-    width: 350px;
-    height: 650px;
-    text-align: center;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
-    overflow-y: scroll;
-    position: relative;
+section {
+  border-left: 6px solid #315e41;
+  padding: 16px 24px;
+  margin: 28px 0;
+  background-color: #5ba976;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
-/* Título fixo no topo */
-.container-midias .titulo {
-    position: sticky;
-    top: 0;
-    background-color: white; /* Ou a cor de fundo do container */
-    z-index: 1;
-    padding: 10px 0;
-    border-bottom: 1px solid #ccc;
+section h2 {
+  color: #000000;
+  margin-bottom: 12px;
 }
 
-.container-img {
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    padding: 10px;
-
+section ul {
+  padding-left: 20px;
+  line-height: 1.6;
 }
 
-
-.imagem-centro img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    object-fit: cover;
-    cursor: pointer;
+section p {
+  line-height: 1.6;
 }
 
-.modal {
-    display: none; 
-    position: fixed; 
-    z-index: 1000; 
-    left: 0;
-    top: 0;
-    width: 100vw; 
-    height: 100vh;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.9); 
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .modal-conteudo {
-    max-width: 90%;
-    max-height: 90%;
-    margin: auto;
-    display: block;
-    border-radius: 10px;
-    box-shadow: 0 0 20px #000;
-  }
-  
-  .fechar {
-    position: absolute;
-    top: 20px;
-    right: 35px;
-    color: #ffffff;
-    font-size: 40px;
-    font-weight: bold;
-    cursor: pointer;
-    z-index: 1001;
-  }
-  .fechar:hover{
-    color: hsl(0, 0%, 22%);
-  }
-  .anterior, .proxima {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: #fff;
-    font-weight: bold;
-    font-size: 40px;
-    user-select: none;
-    transition: 0.3s;
-    z-index: 1001;
-  }
-  
-  .anterior:hover, .proxima:hover {
-    color: hsl(0, 0%, 22%);
-  }
-  
-  .anterior {
-    left: 20px;
-  }
-  
-  .proxima {
-    right: 20px;
-  }
-  
+.terceira-pagina img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+}
 
-  h2 {
-    font-size: 1.3rem;
-    margin-bottom: 0.5rem;
-  }
+.midias {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
 
-  ul {
-    padding-left: 1.5rem;
-  }
+.paginacao {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 30px 0;
+}
 
-  li {
-    margin-bottom: 0.4rem;
-  }
+.pagina-btn {
+  padding: 12px 20px;
+  font-size: 14px;
+  background-color: #FFFFFF;
+  color: #5ba976;
+  border: 2px solid #5ba976;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.pagina-btn:hover {
+  background-color: #5ba976;
+  color: white;
+  transform: scale(1.05);
+}
+
+.pagina-btn.ativo {
+  background-color: #5ba976;
+  color: white;
+}

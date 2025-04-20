@@ -1,0 +1,220 @@
+header {
+    background-image: url('img/folha-da-fortuna.jpg'); /* Troque para a imagem da planta */
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 1px 1px 4px #000;
+  }
+  
+  header h1 {
+    background: rgba(42, 147, 36, 0.5);
+    padding: 1rem 2rem;
+    border-radius: 12px;
+  }
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px 10px;
+}
+
+.container-conteudo {
+  width: 70%;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Títulos principais */
+.container-conteudo header h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* Estilização dos cards */
+.card {
+  background-color: #E6F0EC;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  color: #2b7a2b;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card p,
+.card li {
+  font-size: 1rem;
+}
+
+/* Estilo para listas */
+.card ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+
+
+.container-time {
+    display: flex;
+    justify-content: center;
+
+}
+
+.container-time h2 {
+    margin-left: 3px;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.container-conteudo {
+    text-align: justify;
+    padding: 10px;
+}
+
+
+.container-midias {
+    width: 350px;
+    height: 650px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow-y: scroll;
+    position: relative;
+}
+
+/* Título fixo no topo */
+.container-midias .titulo {
+    position: sticky;
+    top: 0;
+    background-color: white; /* Ou a cor de fundo do container */
+    z-index: 1;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.container-img {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 10px;
+
+}
+
+
+.imagem-centro img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100vw; 
+    height: 100vh;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9); 
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-conteudo {
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #000;
+  }
+  
+  .fechar {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1001;
+  }
+  .fechar:hover{
+    color: hsl(0, 0%, 22%);
+  }
+  .anterior, .proxima {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 40px;
+    user-select: none;
+    transition: 0.3s;
+    z-index: 1001;
+  }
+  
+  .anterior:hover, .proxima:hover {
+    color: hsl(0, 0%, 22%);
+  }
+  
+  .anterior {
+    left: 20px;
+  }
+  
+  .proxima {
+    right: 20px;
+  }
+  
+
+  h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  ul {
+    padding-left: 1.5rem;
+  }
+
+  li {
+    margin-bottom: 0.4rem;
+  }
