@@ -2,16 +2,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
     overflow-x: hidden;
 }
-.container{
-    background-color: #fff;
-}
+
 /* Carrossel de Destaques */
 .destaque {
     margin-top: 3rem;
-    width: 90%;
+    width: 60%;
     height: 300px;
     margin-bottom: 3rem;
 }
@@ -52,6 +50,10 @@ body {
     color: rgba(0, 0, 0);
 }
 .noticia p{
+    text-align: justify;
+}
+.noticia h3{
+    font-size: 19px;
     text-align: justify;
 }
 .container-colaboradores {

@@ -5,12 +5,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prévia das Notícias</title>
+    <link rel="icon" type="image/png" href="./assents/Design sem nome (2).png">
     <link rel="stylesheet" href="./css/prev_noticias.css">
     <link rel="stylesheet" href="./css/filtro.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./icons/fontawesome-free-6.5.2-web/css/all.css">
 </head>
 
 <body>
+    <header>
+        <div class="painel">
+            <a href="./A_home.html"><img src="assents/Design sem nome (2).png" alt="logo" class="logo"></a>
+            <h1>Farmafittos</h1>
+            <li id="abrirModal"><a href="#"><i class="fa-solid fa-gear"></i></a></li>
+        </div>
+        <nav class="navbar">
+            <ul class="menu">
+                <li><a href="./A_home.html">Página Inicial</a></li>
+                <li class="dropdown">
+                    <a href="#">Sobre Nós ▾</a>
+                    <ul class="submenu">
+                        <li><a href="./Apesentacao_Projeto.html">Apresentação do Projeto</a></li>
+                        <li><a href="./Colobaradiores e voluntarios.html">Colaboradores e Voluntários</a></li>
+                    
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#">Publicações ▾</a>
+                    <ul class="submenu">
+                        <li><a href="./prev-noticias.html">Notícias</a></li>
+                        <li class="dropdown">
+                            <a href="./prev-atividades.html">Atividades</a>
+                            <a href="#">Artigos/Estudos</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#">Plantas ▾</a>
+                    <ul class="submenu">
+                        <li><a href="./prev-plantas.html">Plantas</a></li>
+                        <li><a href="./referencias.html">Referências</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="./eventos.html">Eventos</a></li>
+            </ul>
+        </nav>
+    </header>
     <div class="container">
         <div class="container-left">
             <div class="container-noticias">
@@ -71,6 +115,31 @@
             </div>
         </div>
     </div>
+    <footer class="rodapé">
+        <div class="rodapé rodapé-informacao">
+            <h2 class="logo_rodapé">FARMAFITTOS</h2>
+            <p>&copy; 2025 FARMAFITTOS</p>
+            <p>Todos os direitos reservados.</p>
+        </div>
+        <div class="rodapé rodapé-descrição">
+            <p class="descrição">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit adipisci impedit
+                recusandae,
+                sint pariatur eveniet
+                nostrum molestias iusto aut repellendus excepturi iure laboriosam odit maiores deleniti velit eius quos
+                esse.
+            </p>
+        </div>
+        <div class="rodapé rodapé-direita">
+            <div class="rodapé rodapé-contato">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-envelope"></i></i></a></li>
+            </div>
+            <div class="rodapé rodapé-termosdeuso">
+                <a href="#">Termos de Uso e Política de Privacidade</a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

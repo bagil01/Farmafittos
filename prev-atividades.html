@@ -5,11 +5,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Previa das atividades</title>
+    <link rel="icon" type="image/png" href="./assents/Design sem nome (2).png">
     <link rel="stylesheet" href="./css/prev-atividades.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./icons/fontawesome-free-6.5.2-web/css/all.css">
 </head>
 
 <body>
+    <header>
+        <div class="painel">
+            <a href="./A_home.html"><img src="assents/Design sem nome (2).png" alt="logo" class="logo"></a>
+            <h1>Farmafittos</h1>
+            <li id="abrirModal"><a href="#"><i class="fa-solid fa-gear"></i></a></li>
+        </div>
+        <nav class="navbar">
+            <ul class="menu">
+                <li><a href="./A_home.html">Página Inicial</a></li>
+                <li class="dropdown">
+                    <a href="#">Sobre Nós ▾</a>
+                    <ul class="submenu">
+                        <li><a href="./Apesentacao_Projeto.html">Apresentação do Projeto</a></li>
+                        <li><a href="./Colobaradiores e voluntarios.html">Colaboradores e Voluntários</a></li>
+
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#">Publicações ▾</a>
+                    <ul class="submenu">
+                        <li><a href="./prev-noticias.html">Notícias</a></li>
+                        <li class="dropdown">
+                            <a href="./prev-atividades.html">Atividades</a>
+                            <a href="#">Artigos/Estudos</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#">Plantas ▾</a>
+                    <ul class="submenu">
+                        <li><a href="./prev-plantas.html">Plantas</a></li>
+                        <li><a href="./referencias.html">Referências</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="./eventos.html">Eventos</a></li>
+            </ul>
+        </nav>
+    </header>
     <div class="container">
         <div class="card-atividades">
             <div class="card-img">
@@ -24,14 +68,65 @@
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum, beatae.
                     Illum, dolores. Distinctio velit nihil odit voluptas dolorum incidunt ea. Ut
                     ipsum aperiam officia reiciendis illo, aliquam dolore animi voluptatibus?</p>
-                <a href="#">
-                    <i class="fa-solid fa-caret-right"></i>
-                    ver mais
-                    <i class="fa-solid fa-caret-left"></i>
-                </a>
+                <div class="link">
+                    <a href="#">
+                        ---------
+                        ver mais
+                        ---------
+                    </a>
+                    </a>
+                </div>
+            </div>
+            </div>
+            <div class="card-atividades">
+                <div class="card-img">
+                    <img src="./assents/WhatsApp Image 2024-11-27 at 12.37.34.jpeg" alt="">
+                </div>
+                <div class="card-text">
+                    <h1>titulo</h1>
+                    <h2>
+                        <i class="fa-solid fa-calendar-days"></i>
+                        Data:20/20/2020
+                    </h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum, beatae.
+                        Illum, dolores. Distinctio velit nihil odit voluptas dolorum incidunt ea. Ut
+                        ipsum aperiam officia reiciendis illo, aliquam dolore animi voluptatibus?</p>
+                        <div class="link">
+                            <a href="#">
+                                ---------
+                                ver mais
+                                ---------
+                            </a>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
+    <footer class="rodapé">
+        <div class="rodapé rodapé-informacao">
+            <h2 class="logo_rodapé">FARMAFITTOS</h2>
+            <p>&copy; 2025 FARMAFITTOS</p>
+            <p>Todos os direitos reservados.</p>
+        </div>
+        <div class="rodapé rodapé-descrição">
+            <p class="descrição">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit adipisci impedit
+                recusandae,
+                sint pariatur eveniet
+                nostrum molestias iusto aut repellendus excepturi iure laboriosam odit maiores deleniti velit eius quos
+                esse.
+            </p>
+        </div>
+        <div class="rodapé rodapé-direita">
+            <div class="rodapé rodapé-contato">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-envelope"></i></i></a></li>
+            </div>
+            <div class="rodapé rodapé-termosdeuso">
+                <a href="#">Termos de Uso e Política de Privacidade</a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Inter', sans-serif;
-  background-color: #F4F1EE;
+  background-color: #FFFFFF;
   color: #333;
 }
 
@@ -26,7 +26,7 @@ header h1 {
 }
 
 .container-conteudo {
-  background-color: #5ba9761c;
+  background-color: #036f1740;
   max-width: 1000px;
   margin: 30px auto;
   padding: 20px;
@@ -39,7 +39,7 @@ section {
   border-right: 6px solid black;
   padding: 16px 24px;
   margin: 28px 0;
-  background-color: #5ba976;
+  background-color: #E6F0EC;
   border-radius: 12px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
@@ -173,4 +173,22 @@ section li {
   position: absolute;
   width: 100%;
   height: 100%;
+}
+
+.voltar {
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+.voltar a {
+  list-style: none;
+  text-decoration: none;
+  color: #255e39;;
+
+
+}
+
+.voltar a:hover {
+  color: #5ba976;
 }

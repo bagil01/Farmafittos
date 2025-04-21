@@ -10,10 +10,11 @@
 .container-titulo {
     text-align: center; /* Centraliza o texto */
     width: 100%; /* Garante que o container ocupa toda a largura */
+
     
 }
 .container-titulo h1 {
-    margin: 0 auto; /* Remove margens externas e alinha ao centro */
+    margin: 1.5rem auto; /* Remove margens externas e alinha ao centro */
     display: inline-block; /* Garante que o texto respeite a largura do conteúdo */
 }
 

@@ -13,18 +13,18 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 20px;
     background-color: transparent;
 }
 
 /* Card de atividades */
 .card-atividades {
     width: 350px;
-    background: white;
+    background: #E6F0EC;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    
 }
 
 .card-atividades:hover {
@@ -70,22 +70,15 @@
     text-align: justify;
 }
 .card-text a{
-    color: red;
+    color: #4d774e;
     text-decoration: none;
     animation: mudarCor 2s infinite;
 }
 
 .card-text a:hover{
-    color: rgb(88, 0, 0);
+    color: #2c5b32;
+  
 }
-@keyframes mudarCor {
-    0% { color: red; }
-    25% { color: rgb(88, 0, 0) }
-    50% { color: red; }
-    75% { color: rgb(88, 0, 0)}
-    100% { color: red; }
-}
-
 
 
 

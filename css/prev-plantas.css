@@ -9,6 +9,7 @@
 /* Container Principal */
 .container {
     display: flex;
+    background-color: #ffffff;
     justify-content: space-between;
     background-color: transparent;
     padding: 20px;
@@ -21,7 +22,7 @@
     /* Mantém imagem e texto lado a lado */
     width: 100%;
     max-width: 900px;
-    background: #fff;
+    background: #E6F0EC;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     overflow: hidden;
