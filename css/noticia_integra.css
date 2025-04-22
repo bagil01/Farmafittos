@@ -160,3 +160,20 @@
     right: 20px;
   }
   
+.voltar {
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+.voltar a {
+  list-style: none;
+  text-decoration: none;
+  color: #255e39;;
+
+
+}
+
+.voltar a:hover {
+  color: #5ba976;
+}
