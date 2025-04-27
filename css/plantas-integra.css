@@ -87,6 +87,11 @@ section li {
 .terceira-pagina img{
   cursor: pointer;
    border: 1px ;
+  
+}
+.terceira-pagina img:hover{
+  transform: scale(1.15);
+  z-index: 5;
 }
 .paginacao {
   display: flex;
