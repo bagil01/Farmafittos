@@ -80,3 +80,68 @@
     font-size: 16px;
     color: #777;
 }
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .container-voluntarios {
+        width: 90%;
+    }
+    #next,#prev{
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-voluntarios {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .card-voluntarios {
+        width: 80%;
+        margin: 10px 0;
+    }
+
+    .card-voluntarios img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .fa-angle-left, .fa-chevron-right {
+        font-size: 40px;
+    }
+    #next,#prev{
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-voluntarios {
+        width: 90%;
+    }
+
+    .card-voluntarios img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .card-voluntarios h1 {
+        font-size: 20px;
+    }
+
+    .card-voluntarios h2 {
+        font-size: 16px;
+    }
+
+    .card-voluntarios h3 {
+        font-size: 14px;
+    }
+
+    .fa-angle-left, .fa-chevron-right {
+        font-size: 30px;
+    }
+
+    #next,#prev{
+        display: none;
+    }
+}

@@ -77,3 +77,59 @@ button:hover {
     border: 1px solid #5ba976;
     color: #5ba976;
 }
+/* Responsividade */
+@media (max-width: 1024px) {
+    .container-colaborador {
+        width: 90%;
+    }
+
+    .card-colaborador {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-colaborador {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-colaborador {
+        width: 90%;
+        max-width: none;
+        margin: 15px 0;
+    }
+
+    .card-colaborador img {
+        width: 100px;
+        height: 100px;
+    }
+
+    button {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-colaborador h2 {
+        font-size: 20px;
+    }
+
+    .card-colaborador h3 {
+        font-size: 16px;
+    }
+
+    .card-colaborador p {
+        font-size: 13px;
+    }
+
+    .card-colaborador img {
+        width: 80px;
+        height: 80px;
+    }
+
+    button {
+        font-size: 13px;
+        width: 100%;
+    }
+}
