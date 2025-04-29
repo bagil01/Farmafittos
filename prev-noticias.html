@@ -56,6 +56,10 @@
         </nav>
     </header>
     <div class="container">
+        <div class="mobile-buttons">
+            <button onclick="openModal('modalSearch')"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button onclick="openModal('modalFilter')"><i class="fa-solid fa-compass"></i></button>
+        </div>
         <div class="container-left">
             <div class="container-noticias">
                 <div class="container-img">
@@ -115,6 +119,38 @@
             </div>
         </div>
     </div>
+
+      <!-- Modal Pesquisa -->
+<div id="modalSearch" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modalSearch')">&times;</span>
+        <div class="container-seach-modal">
+            <!-- Seu conteúdo de pesquisa aqui -->
+            <h1>Pesquisar Planta</h1>
+            <div class="input-seach-modal">
+                <input type="text" placeholder="Digite para buscar...">
+                <button>Pesquisar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Filtros -->
+<div id="modalFilter" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modalFilter')">&times;</span>
+        <div class="container-filter-modal">
+            <!-- Seu conteúdo de filtro aqui -->
+            <h1>Filtros</h1>
+            <div class="card-filter-modal">
+                <h2>ANTI-INFLAMATÓRIA</h2>
+                    <h2>ANTIMICROBIANA</h2>
+                    <h2>ANTISSÉPTICA</h2>
+                    <h2>ANTIALÉRGICA</h2>
+                <!-- Adicione mais filtros -->
+            </div>
+        </div>
+    </div>
     <footer class="rodapé">
         <div class="rodapé rodapé-informacao">
             <h2 class="logo_rodapé">FARMAFITTOS</h2>
@@ -141,5 +177,5 @@
         </div>
     </footer>
 </body>
-
+    <script src="./js/filtro.js"></script>
 </html>
